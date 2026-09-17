@@ -1,0 +1,31 @@
+# Compiled Java output
+*.class
+build/
+out/
+target/
+bin/
+
+# Packaged artifacts
+*.jar
+*.war
+*.ear
+
+# IDE metadata
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+

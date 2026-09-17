@@ -1,0 +1,200 @@
+ASIA PACIFIC AIRPORT - REAL SUCCESSFUL SIX-AIRCRAFT RUN
+Reproducible Test Seed: 407
+
+[000.000s] [main] [SYSTEM] Simulation random seed: 407
+[000.016s] [main] [SCHEDULE] Aircraft-1 arrival delay = 0 seconds
+[000.017s] [ATC] [SYSTEM] ATC started
+[000.017s] [FuelTruck] [SYSTEM] FuelTruck started
+[000.017s] [main] [SCHEDULE] Aircraft-2 arrival delay = 0 seconds
+[000.017s] [main] [SCHEDULE] Aircraft-3 arrival delay = 0 seconds
+[000.017s] [main] [SCHEDULE] Aircraft-4 arrival delay = 0 seconds
+[000.017s] [main] [SCHEDULE] Aircraft-5 arrival delay = 0 seconds
+[000.018s] [main] [SCHEDULE] Aircraft-6 arrival delay = 0 seconds
+[000.021s] [Aircraft-1] [ARRIVAL] Aircraft-1 approaching airport
+[000.021s] [Aircraft-2] [ARRIVAL] Aircraft-2 approaching airport
+[000.109s] [Aircraft-1] [REQUEST] Aircraft-1 requesting landing permission
+[000.110s] [Aircraft-2] [REQUEST] Aircraft-2 requesting landing permission
+[000.116s] [ATC] [QUEUE] Processing normal landing request from Aircraft-1
+[000.117s] [ATC] [GATE] Gate-1 reserved for Aircraft-1
+[000.117s] [ATC] [LANDING] Landing permission granted to Aircraft-1
+[000.117s] [Aircraft-1] [LANDING] Aircraft-1 landing on runway
+[000.202s] [Aircraft-1] [TAXI] Aircraft-1 coasting to Gate-1
+[000.297s] [ATC] [QUEUE] Processing normal landing request from Aircraft-2
+[000.297s] [ATC] [GATE] Gate-2 reserved for Aircraft-2
+[000.298s] [ATC] [LANDING] Landing permission granted to Aircraft-2
+[000.298s] [Aircraft-2] [LANDING] Aircraft-2 landing on runway
+[000.299s] [Aircraft-1] [RUNWAY] Aircraft-1 cleared runway after landing
+[000.299s] [Aircraft-1] [GATE] Aircraft-1 docked at Gate-1
+[000.382s] [Aircraft-2] [TAXI] Aircraft-2 coasting to Gate-2
+[000.383s] [Aircraft-1] [TURNAROUND] Aircraft-1 starting gate turnaround
+[000.390s] [Aircraft-1] [REQUEST] Aircraft-1 requesting refuelling
+[000.391s] [PassengerGroup-Aircraft-1] [PASSENGERS] Passengers disembarking Aircraft-1
+[000.471s] [Aircraft-2] [RUNWAY] Aircraft-2 cleared runway after landing
+[000.472s] [Aircraft-2] [GATE] Aircraft-2 docked at Gate-2
+[000.553s] [Aircraft-2] [TURNAROUND] Aircraft-2 starting gate turnaround
+[000.554s] [PassengerGroup-Aircraft-1] [PASSENGERS] Passengers disembarked Aircraft-1
+[000.554s] [Aircraft-2] [REQUEST] Aircraft-2 requesting refuelling
+[000.555s] [PassengerGroup-Aircraft-2] [PASSENGERS] Passengers disembarking Aircraft-2
+[000.555s] [CleaningSupplies-Aircraft-1] [CLEANING] Cleaning and refilling supplies for Aircraft-1
+[000.556s] [FuelTruck] [FUEL] Refuelling Aircraft-1
+[000.688s] [FuelTruck] [FUEL] Refuelling complete for Aircraft-1
+[000.722s] [PassengerGroup-Aircraft-2] [PASSENGERS] Passengers disembarked Aircraft-2
+[000.723s] [CleaningSupplies-Aircraft-1] [CLEANING] Cleaning and supplies complete for Aircraft-1
+[000.724s] [CleaningSupplies-Aircraft-2] [CLEANING] Cleaning and refilling supplies for Aircraft-2
+[000.724s] [PassengerGroup-Aircraft-1] [PASSENGERS] New passengers embarking Aircraft-1
+[000.724s] [FuelTruck] [FUEL] Refuelling Aircraft-2
+[000.847s] [FuelTruck] [FUEL] Refuelling complete for Aircraft-2
+[000.888s] [CleaningSupplies-Aircraft-2] [CLEANING] Cleaning and supplies complete for Aircraft-2
+[000.889s] [PassengerGroup-Aircraft-2] [PASSENGERS] New passengers embarking Aircraft-2
+[000.890s] [PassengerGroup-Aircraft-1] [PASSENGERS] 2 new passengers boarded Aircraft-1
+[000.891s] [Aircraft-1] [TURNAROUND] Aircraft-1 gate turnaround complete
+[000.891s] [Aircraft-1] [SCENARIO] Aircraft-1 waiting for second occupied gate
+[001.060s] [PassengerGroup-Aircraft-2] [PASSENGERS] 42 new passengers boarded Aircraft-2
+[001.061s] [Aircraft-2] [TURNAROUND] Aircraft-2 gate turnaround complete
+[001.062s] [Aircraft-2] [SCENARIO] Aircraft-2 holding occupied gate for congestion state
+[001.062s] [Aircraft-1] [REQUEST] Aircraft-1 requesting take-off permission
+[001.065s] [ATC] [QUEUE] Processing take-off request from Aircraft-1
+[001.066s] [ATC] [TAKEOFF] Take-off permission granted to Aircraft-1
+[001.066s] [Aircraft-1] [SCENARIO] Aircraft-1 holding runway and gate for congestion state
+[001.067s] [Aircraft-4] [ARRIVAL] Aircraft-4 approaching airport
+[001.068s] [Aircraft-3] [ARRIVAL] Aircraft-3 approaching airport
+[001.161s] [Aircraft-3] [REQUEST] Aircraft-3 requesting landing permission
+[001.161s] [Aircraft-4] [REQUEST] Aircraft-4 requesting landing permission
+[001.163s] [Aircraft-5] [ARRIVAL] Aircraft-5 approaching airport
+[001.253s] [Aircraft-5] [EMERGENCY] Aircraft-5 has low fuel
+[001.253s] [Aircraft-5] [REQUEST] Aircraft-5 requesting emergency landing permission
+[001.254s] [main] [SCENARIO] ACTUAL CONGESTED STATE: occupiedGates=2, normalQueue=[Aircraft-3, Aircraft-4], emergencyQueue=[Aircraft-5], runwayReservedFor=Aircraft-1, aircraftOnGround=2
+[001.254s] [Aircraft-2] [REQUEST] Aircraft-2 requesting take-off permission
+[001.255s] [Aircraft-6] [ARRIVAL] Aircraft-6 approaching airport
+[001.256s] [Aircraft-1] [GATE] Aircraft-1 undocking from Gate-1
+[001.341s] [Aircraft-1] [TAXI] Aircraft-1 coasting to runway
+[001.341s] [Aircraft-6] [REQUEST] Aircraft-6 requesting landing permission
+[001.426s] [Aircraft-1] [TAKEOFF] Aircraft-1 taking off
+[001.512s] [Aircraft-1] [DEPARTURE] Aircraft-1 left airport
+[001.513s] [ATC] [EMERGENCY] Emergency request received and selected for next safe landing: Aircraft-5
+[001.513s] [ATC] [GATE] Gate-1 reserved for Aircraft-5
+[001.513s] [ATC] [EMERGENCY] Landing permission granted to Aircraft-5
+[001.514s] [Aircraft-5] [LANDING] Aircraft-5 landing on runway
+[001.596s] [Aircraft-5] [TAXI] Aircraft-5 coasting to Gate-1
+[001.679s] [Aircraft-5] [RUNWAY] Aircraft-5 cleared runway after landing
+[001.679s] [Aircraft-5] [GATE] Aircraft-5 docked at Gate-1
+[001.680s] [ATC] [QUEUE] Processing take-off request from Aircraft-2
+[001.680s] [ATC] [TAKEOFF] Take-off permission granted to Aircraft-2
+[001.680s] [Aircraft-2] [GATE] Aircraft-2 undocking from Gate-2
+[001.771s] [Aircraft-5] [TURNAROUND] Aircraft-5 starting gate turnaround
+[001.771s] [Aircraft-2] [TAXI] Aircraft-2 coasting to runway
+[001.772s] [Aircraft-5] [REQUEST] Aircraft-5 requesting refuelling
+[001.772s] [PassengerGroup-Aircraft-5] [PASSENGERS] Passengers disembarking Aircraft-5
+[001.859s] [Aircraft-2] [TAKEOFF] Aircraft-2 taking off
+[001.935s] [PassengerGroup-Aircraft-5] [PASSENGERS] Passengers disembarked Aircraft-5
+[001.936s] [FuelTruck] [FUEL] Refuelling Aircraft-5
+[001.936s] [CleaningSupplies-Aircraft-5] [CLEANING] Cleaning and refilling supplies for Aircraft-5
+[001.943s] [ATC] [QUEUE] Processing normal landing request from Aircraft-3
+[001.944s] [Aircraft-2] [DEPARTURE] Aircraft-2 left airport
+[001.944s] [ATC] [GATE] Gate-2 reserved for Aircraft-3
+[001.944s] [ATC] [LANDING] Landing permission granted to Aircraft-3
+[001.944s] [Aircraft-3] [LANDING] Aircraft-3 landing on runway
+[002.024s] [Aircraft-3] [TAXI] Aircraft-3 coasting to Gate-2
+[002.056s] [FuelTruck] [FUEL] Refuelling complete for Aircraft-5
+[002.097s] [CleaningSupplies-Aircraft-5] [CLEANING] Cleaning and supplies complete for Aircraft-5
+[002.098s] [PassengerGroup-Aircraft-5] [PASSENGERS] New passengers embarking Aircraft-5
+[002.105s] [Aircraft-3] [RUNWAY] Aircraft-3 cleared runway after landing
+[002.105s] [Aircraft-3] [GATE] Aircraft-3 docked at Gate-2
+[002.105s] [ATC] [QUEUE] Processing normal landing request from Aircraft-4
+[002.105s] [ATC] [GATE] Gate-3 reserved for Aircraft-4
+[002.105s] [ATC] [LANDING] Landing permission granted to Aircraft-4
+[002.106s] [Aircraft-4] [LANDING] Aircraft-4 landing on runway
+[002.192s] [Aircraft-4] [TAXI] Aircraft-4 coasting to Gate-3
+[002.193s] [Aircraft-3] [TURNAROUND] Aircraft-3 starting gate turnaround
+[002.194s] [PassengerGroup-Aircraft-3] [PASSENGERS] Passengers disembarking Aircraft-3
+[002.194s] [Aircraft-3] [REQUEST] Aircraft-3 requesting refuelling
+[002.258s] [PassengerGroup-Aircraft-5] [PASSENGERS] 43 new passengers boarded Aircraft-5
+[002.259s] [Aircraft-5] [TURNAROUND] Aircraft-5 gate turnaround complete
+[002.259s] [Aircraft-5] [REQUEST] Aircraft-5 requesting take-off permission
+[002.280s] [ATC] [QUEUE] Processing take-off request from Aircraft-5
+[002.281s] [ATC] [TAKEOFF] Take-off permission granted to Aircraft-5
+[002.281s] [Aircraft-4] [RUNWAY] Aircraft-4 cleared runway after landing
+[002.281s] [Aircraft-4] [GATE] Aircraft-4 docked at Gate-3
+[002.282s] [Aircraft-5] [GATE] Aircraft-5 undocking from Gate-1
+[002.355s] [PassengerGroup-Aircraft-3] [PASSENGERS] Passengers disembarked Aircraft-3
+[002.356s] [CleaningSupplies-Aircraft-3] [CLEANING] Cleaning and refilling supplies for Aircraft-3
+[002.356s] [FuelTruck] [FUEL] Refuelling Aircraft-3
+[002.364s] [Aircraft-4] [TURNAROUND] Aircraft-4 starting gate turnaround
+[002.365s] [Aircraft-4] [REQUEST] Aircraft-4 requesting refuelling
+[002.366s] [Aircraft-5] [TAXI] Aircraft-5 coasting to runway
+[002.368s] [PassengerGroup-Aircraft-4] [PASSENGERS] Passengers disembarking Aircraft-4
+[002.447s] [Aircraft-5] [TAKEOFF] Aircraft-5 taking off
+[002.480s] [FuelTruck] [FUEL] Refuelling complete for Aircraft-3
+[002.522s] [CleaningSupplies-Aircraft-3] [CLEANING] Cleaning and supplies complete for Aircraft-3
+[002.522s] [PassengerGroup-Aircraft-3] [PASSENGERS] New passengers embarking Aircraft-3
+[002.530s] [Aircraft-5] [DEPARTURE] Aircraft-5 left airport
+[002.531s] [PassengerGroup-Aircraft-4] [PASSENGERS] Passengers disembarked Aircraft-4
+[002.535s] [ATC] [QUEUE] Processing normal landing request from Aircraft-6
+[002.535s] [ATC] [GATE] Gate-1 reserved for Aircraft-6
+[002.536s] [ATC] [LANDING] Landing permission granted to Aircraft-6
+[002.536s] [FuelTruck] [FUEL] Refuelling Aircraft-4
+[002.536s] [CleaningSupplies-Aircraft-4] [CLEANING] Cleaning and refilling supplies for Aircraft-4
+[002.537s] [Aircraft-6] [LANDING] Aircraft-6 landing on runway
+[002.624s] [Aircraft-6] [TAXI] Aircraft-6 coasting to Gate-1
+[002.672s] [FuelTruck] [FUEL] Refuelling complete for Aircraft-4
+[002.696s] [PassengerGroup-Aircraft-3] [PASSENGERS] 31 new passengers boarded Aircraft-3
+[002.697s] [Aircraft-3] [TURNAROUND] Aircraft-3 gate turnaround complete
+[002.697s] [Aircraft-3] [REQUEST] Aircraft-3 requesting take-off permission
+[002.712s] [Aircraft-6] [RUNWAY] Aircraft-6 cleared runway after landing
+[002.712s] [Aircraft-6] [GATE] Aircraft-6 docked at Gate-1
+[002.712s] [CleaningSupplies-Aircraft-4] [CLEANING] Cleaning and supplies complete for Aircraft-4
+[002.713s] [ATC] [QUEUE] Processing take-off request from Aircraft-3
+[002.713s] [ATC] [TAKEOFF] Take-off permission granted to Aircraft-3
+[002.714s] [Aircraft-3] [GATE] Aircraft-3 undocking from Gate-2
+[002.714s] [PassengerGroup-Aircraft-4] [PASSENGERS] New passengers embarking Aircraft-4
+[002.793s] [Aircraft-6] [TURNAROUND] Aircraft-6 starting gate turnaround
+[002.793s] [Aircraft-6] [REQUEST] Aircraft-6 requesting refuelling
+[002.799s] [PassengerGroup-Aircraft-6] [PASSENGERS] Passengers disembarking Aircraft-6
+[002.801s] [Aircraft-3] [TAXI] Aircraft-3 coasting to runway
+[002.883s] [PassengerGroup-Aircraft-4] [PASSENGERS] 12 new passengers boarded Aircraft-4
+[002.887s] [Aircraft-4] [TURNAROUND] Aircraft-4 gate turnaround complete
+[002.887s] [Aircraft-4] [REQUEST] Aircraft-4 requesting take-off permission
+[002.887s] [Aircraft-3] [TAKEOFF] Aircraft-3 taking off
+[002.966s] [PassengerGroup-Aircraft-6] [PASSENGERS] Passengers disembarked Aircraft-6
+[002.967s] [CleaningSupplies-Aircraft-6] [CLEANING] Cleaning and refilling supplies for Aircraft-6
+[002.968s] [FuelTruck] [FUEL] Refuelling Aircraft-6
+[002.975s] [Aircraft-3] [DEPARTURE] Aircraft-3 left airport
+[002.976s] [ATC] [QUEUE] Processing take-off request from Aircraft-4
+[002.976s] [ATC] [TAKEOFF] Take-off permission granted to Aircraft-4
+[002.976s] [Aircraft-4] [GATE] Aircraft-4 undocking from Gate-3
+[003.057s] [Aircraft-4] [TAXI] Aircraft-4 coasting to runway
+[003.096s] [FuelTruck] [FUEL] Refuelling complete for Aircraft-6
+[003.135s] [CleaningSupplies-Aircraft-6] [CLEANING] Cleaning and supplies complete for Aircraft-6
+[003.136s] [PassengerGroup-Aircraft-6] [PASSENGERS] New passengers embarking Aircraft-6
+[003.145s] [Aircraft-4] [TAKEOFF] Aircraft-4 taking off
+[003.234s] [Aircraft-4] [DEPARTURE] Aircraft-4 left airport
+[003.303s] [PassengerGroup-Aircraft-6] [PASSENGERS] 42 new passengers boarded Aircraft-6
+[003.303s] [Aircraft-6] [TURNAROUND] Aircraft-6 gate turnaround complete
+[003.304s] [Aircraft-6] [REQUEST] Aircraft-6 requesting take-off permission
+[003.304s] [ATC] [QUEUE] Processing take-off request from Aircraft-6
+[003.304s] [ATC] [TAKEOFF] Take-off permission granted to Aircraft-6
+[003.304s] [Aircraft-6] [GATE] Aircraft-6 undocking from Gate-1
+[003.388s] [Aircraft-6] [TAXI] Aircraft-6 coasting to runway
+[003.476s] [Aircraft-6] [TAKEOFF] Aircraft-6 taking off
+[003.558s] [Aircraft-6] [DEPARTURE] Aircraft-6 left airport
+[003.559s] [FuelTruck] [SYSTEM] FuelTruck stopped
+[003.560s] [ATC] [STATISTICS] Minimum landing waiting time: 5.056 ms
+[003.560s] [ATC] [STATISTICS] Average landing waiting time: 562.183 ms
+[003.560s] [ATC] [STATISTICS] Maximum landing waiting time: 1194.751 ms
+[003.560s] [ATC] [STATISTICS] Aircraft Served: 6 / 6
+[003.560s] [ATC] [STATISTICS] Passengers Boarded: 172
+[003.561s] [ATC] [STATISTICS] Total simulation runtime: 3.560 seconds
+[003.561s] [ATC] [SAFETY] Gate-1 = EMPTY
+[003.561s] [ATC] [SAFETY] Gate-2 = EMPTY
+[003.561s] [ATC] [SAFETY] Gate-3 = EMPTY
+[003.561s] [ATC] [SAFETY] Runway = EMPTY
+[003.561s] [ATC] [SAFETY] Aircraft on airport grounds = 0
+[003.562s] [ATC] [SAFETY] FuelTruck = IDLE
+[003.562s] [ATC] [SAFETY] Runway violations = 0
+[003.562s] [ATC] [SAFETY] Gate violations = 0
+[003.562s] [ATC] [SAFETY] Capacity violations = 0
+[003.563s] [ATC] [SAFETY] FuelTruck violations = 0
+[003.563s] [ATC] [SAFETY] FINAL SAFETY RESULT: PASSED
+[003.563s] [ATC] [SYSTEM] ATC stopped
+[003.563s] [main] [SYSTEM] Main joined every Aircraft, FuelTruck, and ATC thread
+
